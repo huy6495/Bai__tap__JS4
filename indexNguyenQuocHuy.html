@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Bai tap 1: Ba so nguyen -->
+    <form class="container text-center mt-5">
+        <h3>Bài tập 1: Ba số nguyên</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">So nguyen 1</span>
+            </div>
+            <input type="number" class="form-control" id="soThu1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">So nguyen 2</span>
+            </div>
+            <input type="number" class="form-control" id="soThu2">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">So nguyen 3</span>
+            </div>
+            <input type="number" class="form-control" id="soThu3">
+        </div>
+        <button type="button" class="btn btn-success" id="ketQuaBai1">Xuat ket qua</button>
+        <div class="container text-center">
+            <p id="ketQua1"></p>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Bai tap 2: Chao hoi -->
+
+    <div class="container text-center">
+        <h3>Bài tập 2: Ai đang sử dụng máy tính?</h3>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" id="chaoBo">Bố
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" id="chaoMe">Mẹ
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" id="chaoAnh">Anh trai
+            </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio" id="chaoEm">Em gái
+            </label>
+        </div>
+        <p id="loiChao"></p>
+    </div>
+
+    <hr>
+
+    <!-- Bai tap 3: -->
+    <form class="container text-center mt-5">
+        <h3>Bài tập 3: Chẵn lẻ</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">So nguyen 1</span>
+            </div>
+            <input type="number" class="form-control" id="soThu4">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">So nguyen 2</span>
+            </div>
+            <input type="number" class="form-control" id="soThu5">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">So nguyen 3</span>
+            </div>
+            <input type="number" class="form-control" id="soThu6">
+        </div>
+        <button type="button" class="btn btn-success" id="ketQuaBai3">Xuat ket qua</button>
+        <div class="container text-center">
+            <div id="ketQua3Le" class="container" style="display: none;">
+                <p>Số lẻ là: </p>
+            </div>
+            <div id="ketQua3Chan" class="container" style="display: none;">
+                <p>Số chẵn là: </p>
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Bài tập 4: -->
+    <form class="container text-center mt-5">
+        <h3>Bài tập 4: Kiểm tra tam giác</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Cạnh 1:</span>
+            </div>
+            <input type="number" class="form-control" id="canhThu1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Cạnh 2:</span>
+            </div>
+            <input type="number" class="form-control" id="canhThu2">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Cạnh 3:</span>
+            </div>
+            <input type="number" class="form-control" id="canhThu3">
+        </div>
+        <button type="button" class="btn btn-success" id="ketQuaBai4">Xuat ket qua</button>
+        <div class="container text-center">
+            <p id="ketQua4"></p>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Nang cao 1: -->
+    <form class="container text-center mt-5">
+        <h3>Nâng cao 1: Ngày tiếp theo</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nhập ngày:</span>
+            </div>
+            <input type="number" class="form-control" id="ngay">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nhập tháng:</span>
+            </div>
+            <input type="number" class="form-control" id="thang">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nhập năm:</span>
+            </div>
+            <input type="number" class="form-control" id="nam">
+        </div>
+        <button type="button" class="btn btn-success" id="ketQuaNangCao1">Xuat ket qua</button>
+        <div class="container text-center">
+            <p id="ketQua1NangCao"></p>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Nang cao 2: -->
+    <form class="container text-center mt-5">
+        <h3>Nâng cao 2: Ngày trong tháng</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nhập tháng:</span>
+            </div>
+            <input type="number" class="form-control" id="txtThang">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nhập năm:</span>
+            </div>
+            <input type="number" class="form-control" id="txtNam">
+        </div>
+        <button type="button" class="btn btn-success" id="ketQuaNangCao2">Xuat ket qua</button>
+        <div class="container text-center">
+            <p id="ketQua2NangCao"></p>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Nang cao 3: -->
+    <form class="container text-center mt-5">
+        <h3>Nâng cao 3: Cách đọc số</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Nhập số:</span>
+            </div>
+            <input type="number" class="form-control" id="txtSo">
+        </div>
+        <button type="button" class="btn btn-success mb-3" id="ketQuaNangCao3">Xuat ket qua</button>
+        <div class="container text-center">
+            <p id="ketQua3NangCao"></p>
+        </div>
+    </form>
+
+    <hr>
+
+    <!-- Nang cao 4: -->
+    <form class="container text-center mt-5">
+        <h3>Nâng cao 4: Tọa độ nhà bắc cực</h3>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-4 input-group-prepend"><span class="input-group-text">Nhập tên A:</span>
+                    <input type="text" class="form-control" id="A">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ x:</span>
+                    <input type="number" class="form-control" id="xA">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ y:</span>
+                    <input type="number" class="form-control" id="yA">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-4 input-group-prepend"><span class="input-group-text">Nhập tên B:</span>
+                    <input type="text" class="form-control" id="B">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ x:</span>
+                    <input type="number" class="form-control" id="xB">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ y:</span>
+                    <input type="number" class="form-control" id="yB">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-4 input-group-prepend"><span class="input-group-text">Nhập tên C:</span>
+                    <input type="text" class="form-control" id="C">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ x:</span>
+                    <input type="number" class="form-control" id="xC">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ y:</span>
+                    <input type="number" class="form-control" id="yC">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <h3>Tọa độ trường:</h3>
+            <div class="row container">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ x:</span>
+                    <input type="number" class="form-control" id="xT">
+                </div>
+                <div class="col-md-3 input-group-prepend"><span class="input-group-text">Nhập tọa độ y:</span>
+                    <input type="number" class="form-control" id="yT">
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success mt-3" id="ketQuaNangCao4">Xuat ket qua</button>
+        <div class="container text-center">
+            <p id="ketQua4NangCao"></p>
+        </div>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
